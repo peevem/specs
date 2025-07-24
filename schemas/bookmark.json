@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/bookmark",
+  "title": "Bookmark Event",
+  "description": "An event representing a web bookmark",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "const": "bookmark",
+          "title": "Event Type",
+          "description": "Indicates this is a bookmark event"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "title": "URL",
+          "description": "The web address that was bookmarked"
+        },
+        "title": {
+          "type": "string",
+          "title": "Title",
+          "description": "The title of the bookmarked page"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description",
+          "description": "Optional description or notes about the bookmark"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags",
+          "description": "Categorization tags for the bookmark"
+        },
+        "archived": {
+          "type": "boolean",
+          "default": false,
+          "title": "Archived",
+          "description": "Whether the bookmark has been archived"
+        },
+        "favicon": {
+          "type": "string",
+          "format": "uri",
+          "title": "Favicon",
+          "description": "URI to the favicon of the bookmarked site"
+        },
+        "read_later": {
+          "type": "boolean",
+          "default": false,
+          "title": "Read Later",
+          "description": "Whether this bookmark was saved to read later"
+        },
+        "read_time_minutes": {
+          "type": "integer",
+          "minimum": 0,
+          "title": "Read Time",
+          "description": "Estimated time to read the content in minutes"
+        }
+      },
+      "required": ["event", "url"]
+    }
+  ]
+}

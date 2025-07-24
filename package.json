@@ -1,0 +1,34 @@
+{
+  "name": "peevem",
+  "version": "0.1.0",
+  "description": "Personal Event-Sourced Knowledge Management - Schemas and Specifications",
+  "main": "index.js",
+  "scripts": {
+    "validate": "node scripts/validate-schemas.js",
+    "test": "node scripts/test-examples.js",
+    "docs:build": "node scripts/build-docs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peevem/specs.git"
+  },
+  "keywords": [
+    "event-sourcing",
+    "knowledge-management",
+    "personal-data",
+    "json-schema",
+    "ndjson"
+  ],
+  "author": "PEEVEM Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peevem/specs/issues"
+  },
+  "homepage": "https://github.com/peevem/specs#readme",
+  "devDependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "chalk": "^4.1.2",
+    "glob": "^8.1.0"
+  }
+}

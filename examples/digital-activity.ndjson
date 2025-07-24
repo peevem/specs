@@ -1,0 +1,7 @@
+{"date":"2025-07-24T10:15:32Z","uuid":"f47ac10b-58cc-4372-a567-0e02b2c3d479","event":"bookmark_created","url":"https://json-schema.org/understanding-json-schema/","title":"Understanding JSON Schema","tags":["documentation","reference","json"]}
+{"date":"2025-07-24T10:23:45Z","uuid":"38b7d650-0e27-4ded-8b3a-c1f710c27ce8","event":"file_created","path":"/Documents/Projects/PEEVEM/schemas/bookmark.json","size":1204,"mime_type":"application/json"}
+{"date":"2025-07-24T11:07:12Z","uuid":"6ba7b810-9dad-11d1-80b4-00c04fd430c8","event":"email_sent","to":["collaborator@example.com"],"subject":"PEEVEM Schema Proposal","has_attachments":true,"message_id":"<CAE+FghJS1vK2H5Bm7Mj2JMsvr2Sac@example.com>"}
+{"date":"2025-07-24T13:42:01Z","uuid":"6ba7b811-9dad-11d1-80b4-00c04fd430c8","event":"search_performed","query":"event sourcing best practices","search_engine":"DuckDuckGo","results_count":12}
+{"date":"2025-07-24T14:15:33Z","uuid":"6ba7b812-9dad-11d1-80b4-00c04fd430c8","event":"git_commit","repository":"https://github.com/peevem/specs","commit_hash":"a7d31f3c26f9a7a1298a8cb98c1b65770223f8c2","message":"Add bookmark schema"}
+{"date":"2025-07-24T16:05:22Z","uuid":"6ba7b813-9dad-11d1-80b4-00c04fd430c8","event":"application_opened","name":"Visual Studio Code","version":"1.80.1"}
+{"date":"2025-07-24T18:33:10Z","uuid":"6ba7b814-9dad-11d1-80b4-00c04fd430c8","event":"video_watched","platform":"YouTube","video_id":"dQw4w9WgXcQ","title":"Never Gonna Give You Up","duration_seconds":213,"watched_seconds":213}

@@ -1,0 +1,7 @@
+{"date":"2025-07-24T09:00:00Z","uuid":"c3d16614-d56f-4056-bfef-ad61e9e1124a","event":"exercise","activity":"running","duration_minutes":30,"distance_km":5.2,"calories":320}
+{"date":"2025-07-24T12:30:00Z","uuid":"07e78be0-37fc-4913-a38c-534159387ad2","event":"meal","meal_type":"lunch","foods":["salad","grilled chicken","iced tea"],"location":"Home"}
+{"date":"2025-07-24T14:00:00Z","uuid":"46d947c5-8a09-4a7f-95eb-2e4c5669869f","event":"meeting","title":"Weekly Team Sync","participants":["Alice","Bob","Charlie","Diana"],"location":"Conference Room B","notes":"Discussed Q3 goals and upcoming project deadlines"}
+{"date":"2025-07-24T16:30:00Z","uuid":"8df0e804-0083-4685-b070-4999d7f8a929","event":"purchase","item":"Books","amount":42.99,"currency":"USD","vendor":"Local Bookstore","payment_method":"Credit Card"}
+{"date":"2025-07-24T18:15:00Z","uuid":"bdb5f889-2158-477e-a909-556487e9a64b","event":"travel","mode":"car","from":"Home","to":"Restaurant","distance_km":8.7,"duration_minutes":15}
+{"date":"2025-07-24T19:00:00Z","uuid":"a89afb99-5c8a-4ef1-8aa7-a0a8f5d94f12","event":"social","type":"dinner","with":["Frank","Grace"],"location":"Italian Restaurant","notes":"Celebrated Grace's promotion"}
+{"date":"2025-07-24T22:30:00Z","uuid":"fc13c5fc-04b1-49d1-9af6-a6bf0cb3b2cc","event":"reflection","mood":"positive","highlights":["Team meeting went well","Finished reading book","Good conversation at dinner"],"thoughts":"Making good progress on personal goals this month"}

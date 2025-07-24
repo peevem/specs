@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/contact",
+  "title": "Contact Event",
+  "description": "An event representing a contact creation or update",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "enum": ["contact_created", "contact_updated"],
+          "title": "Event Type",
+          "description": "The type of contact event"
+        },
+        "contact_id": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Contact ID",
+          "description": "Unique identifier for this contact"
+        },
+        "name": {
+          "type": "object",
+          "properties": {
+            "first": {
+              "type": "string",
+              "title": "First Name",
+              "description": "First or given name"
+            },
+            "middle": {
+              "type": "string",
+              "title": "Middle Name",
+              "description": "Middle name or initial"
+            },
+            "last": {
+              "type": "string",
+              "title": "Last Name",
+              "description": "Last or family name"
+            },
+            "prefix": {
+              "type": "string",
+              "title": "Prefix",
+              "description": "Name prefix (e.g., Dr., Mr., Ms.)"
+            },
+            "suffix": {
+              "type": "string",
+              "title": "Suffix",
+              "description": "Name suffix (e.g., Jr., Sr., Ph.D.)"
+            },
+            "nickname": {
+              "type": "string",
+              "title": "Nickname",
+              "description": "Informal name or alias"
+            }
+          },
+          "title": "Name",
+          "description": "Contact's name information"
+        },
+        "emails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string",
+                "format": "email",
+                "title": "Email Address",
+                "description": "Email address"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["personal", "work", "other"],
+                "title": "Email Type",
+                "description": "Category of this email address"
+              },
+              "primary": {
+                "type": "boolean",
+                "default": false,
+                "title": "Primary",
+                "description": "Whether this is the primary email address"
+              }
+            },
+            "required": ["address"]
+          },
+          "title": "Email Addresses",
+          "description": "Contact's email addresses"
+        },
+        "phones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "number": {
+                "type": "string",
+                "title": "Phone Number",
+                "description": "Phone number with or without formatting"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["mobile", "home", "work", "fax", "other"],
+                "title": "Phone Type",
+                "description": "Category of this phone number"
+              },
+              "primary": {
+                "type": "boolean",
+                "default": false,
+                "title": "Primary",
+                "description": "Whether this is the primary phone number"
+              }
+            },
+            "required": ["number"]
+          },
+          "title": "Phone Numbers",
+          "description": "Contact's phone numbers"
+        },
+        "addresses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "street": {
+                "type": "string",
+                "title": "Street Address",
+                "description": "Street address including house/apartment number"
+              },
+              "city": {
+                "type": "string",
+                "title": "City",
+                "description": "City or locality"
+              },
+              "state": {
+                "type": "string",
+                "title": "State/Province",
+                "description": "State, province, or region"
+              },
+              "postal_code": {
+                "type": "string",
+                "title": "Postal Code",
+                "description": "ZIP or postal code"
+              },
+              "country": {
+                "type": "string",
+                "title": "Country",
+                "description": "Country name or code"
+              },
+              "type": {
+                "type": "string",
+                "enum": ["home", "work", "other"],
+                "title": "Address Type",
+                "description": "Category of this address"
+              }
+            },
+            "required": ["street"]
+          },
+          "title": "Addresses",
+          "description": "Contact's physical addresses"
+        },
+        "notes": {
+          "type": "string",
+          "title": "Notes",
+          "description": "Additional information about the contact"
+        },
+        "birthday": {
+          "type": "string",
+          "format": "date",
+          "title": "Birthday",
+          "description": "Contact's date of birth"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tags",
+          "description": "Categorization tags for the contact"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Groups",
+          "description": "Groups or categories this contact belongs to"
+        },
+        "social_profiles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "platform": {
+                "type": "string",
+                "title": "Platform",
+                "description": "Name of the social media platform"
+              },
+              "username": {
+                "type": "string",
+                "title": "Username",
+                "description": "Handle or username on the platform"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "title": "URL",
+                "description": "Direct link to the profile"
+              }
+            },
+            "required": ["platform"]
+          },
+          "title": "Social Profiles",
+          "description": "Contact's social media profiles"
+        }
+      },
+      "required": ["event", "contact_id"]
+    }
+  ]
+}
