@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/event",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "allOf": [
+    { "$ref": "/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "title": "Event verb",
+          "description": "What occured?",
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "title": "Event subject",
+          "description": "What's concerned?",
+          "type": "string",
+          "format": "uuid"
+        }
+      },
+      "required": ["event"]
+    }
+  ]
+}
