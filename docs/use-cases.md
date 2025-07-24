@@ -2,6 +2,28 @@
 
 This document explores the various ways PEEVEM can be used to capture, store, and derive value from personal events. These use cases demonstrate the flexibility and utility of the PEEVEM approach.
 
+## Tagging and Metadata Management
+
+The PEEVEM tagging approach (using separate tag events rather than embedding tags within events) provides several important benefits:
+
+### Flexible Classification
+
+- **Dynamic Categorization**: Add, modify, or remove tags without altering original events
+- **Multiple Taxonomies**: Apply different tagging systems in parallel
+- **Temporal Context**: See how classifications and categories evolved over time
+
+### Advanced Search and Filtering
+
+- **Tag-Based Queries**: Find all events with specific tags across different event types
+- **Tag Combination Analysis**: Identify patterns where multiple tags co-occur
+- **Filtering by Tag Addition/Removal Date**: See when categorization changed
+
+### User-Driven Organization
+
+- **Personal Taxonomies**: Each user can maintain their own tagging system
+- **Collaborative Tagging**: Multiple users can tag the same events
+- **Gradual Refinement**: Start with basic tags and refine your system over time
+
 ## Personal Knowledge Management
 
 ### Unified Digital Memory

@@ -22,6 +22,18 @@ This directory contains the JSON Schema definitions that form the foundation of 
 
 [`content.json`](content.json) extends the core schema for events that involve content creation or consumption.
 
+### Tag Event
+
+[`tag.json`](tag.json) defines a schema for tagging other events:
+
+- `event`: Always "tag" for this event type
+- `target`: UUID of the event being tagged
+- `value`: The tag value being applied
+- `namespace`: Optional namespace for the tag
+- `removed`: Boolean indicating if the tag is being removed (default: false)
+
+Tags are implemented as separate events rather than embedded within the original events. This allows for adding or removing tags without modifying the original events, supporting a more flexible and maintainable event stream.
+
 ## Schema Versioning
 
 Schemas in PEEVEM are versioned using semantic versioning principles:

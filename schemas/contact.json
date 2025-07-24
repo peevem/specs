@@ -166,21 +166,13 @@
           "title": "Birthday",
           "description": "Contact's date of birth"
         },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Tags",
-          "description": "Categorization tags for the contact"
-        },
         "groups": {
           "type": "array",
           "items": {
             "type": "string"
           },
           "title": "Groups",
-          "description": "Groups or categories this contact belongs to"
+          "description": "Groups or categories this contact belongs to (consider using tag events instead)"
         },
         "social_profiles": {
           "type": "array",

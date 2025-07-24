@@ -1,0 +1,11 @@
+{"date":"2025-07-24T08:00:00Z","uuid":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","event":"note_created","title":"Project Ideas","content":"List of potential projects to work on"}
+{"date":"2025-07-24T08:05:00Z","uuid":"b2c3d4e5-f6a7-5b6c-9d0e-1f2a3b4c5d6e","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"work"}
+{"date":"2025-07-24T08:05:01Z","uuid":"c3d4e5f6-a7b8-6c7d-0e1f-2a3b4c5d6e7f","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"ideas"}
+{"date":"2025-07-24T08:05:02Z","uuid":"d4e5f6a7-b8c9-7d0e-1f2a-3b4c5d6e7f8a","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"high","namespace":"priority"}
+{"date":"2025-07-24T14:30:00Z","uuid":"e5f6a7b8-c9d0-8e1f-2a3b-4c5d6e7f8a9b","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"brainstorming"}
+{"date":"2025-07-25T09:15:00Z","uuid":"f6a7b8c9-d0e1-9f2a-3b4c-5d6e7f8a9b0c","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"high","namespace":"priority","removed":true}
+{"date":"2025-07-25T09:15:01Z","uuid":"a7b8c9d0-e1f2-0a3b-4c5d-6e7f8a9b0c1d","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"medium","namespace":"priority"}
+{"date":"2025-07-25T09:15:10Z","uuid":"b8c9d0e1-f2a3-1b4c-5d6e-7f8a9b0c1d2e","event":"note_updated","original":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","title":"Project Ideas - Q3 2025","content":"Refined list of potential projects to work on in Q3"}
+{"date":"2025-07-25T09:20:00Z","uuid":"c9d0e1f2-a3b4-2c5d-6e7f-8a9b0c1d2e3f","event":"tag","target":"b8c9d0e1-f2a3-1b4c-5d6e-7f8a9b0c1d2e","value":"work"}
+{"date":"2025-07-25T09:20:01Z","uuid":"d0e1f2a3-b4c5-3d6e-7f8a-9b0c1d2e3f4a","event":"tag","target":"b8c9d0e1-f2a3-1b4c-5d6e-7f8a9b0c1d2e","value":"planning"}
+{"date":"2025-07-25T09:20:02Z","uuid":"e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b","event":"tag","target":"b8c9d0e1-f2a3-1b4c-5d6e-7f8a9b0c1d2e","value":"q3-2025","namespace":"timeframe"}

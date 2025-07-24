@@ -103,6 +103,10 @@ function determineSchema(event) {
     return 'https://peevem.org/schemas/contact';
   }
 
+  if (event.event === 'tag') {
+    return 'https://peevem.org/schemas/tag';
+  }
+
   // If we have an event property, use the generic event schema
   if (event.event) {
     return 'https://peevem.org/schemas/event';

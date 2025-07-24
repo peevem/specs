@@ -65,3 +65,9 @@ As for additional repositories, you might consider:
 4. **peevem-validator**: A standalone validation tool for PEEVEM streams
 
 This modular approach allows different aspects of the ecosystem to evolve independently while maintaining the core specifications as the authoritative reference.
+
+> Tags should be separate events to allow easy addition or removal without changing original events. Change documentation and examples accordingly.
+
+I'll update the documentation and examples to reflect the concept that tags should be separate events rather than embedded within the original events. This approach allows for more flexible tag management without modifying the original events.
+
+Let me implement these changes

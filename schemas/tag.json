@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/tag",
+  "title": "Tag Event",
+  "description": "An event representing a tag applied to another event",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "const": "tag",
+          "title": "Event Type",
+          "description": "Indicates this is a tag event"
+        },
+        "target": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Target Event",
+          "description": "UUID of the event being tagged"
+        },
+        "value": {
+          "type": "string",
+          "minLength": 1,
+          "title": "Tag Value",
+          "description": "The tag being applied"
+        },
+        "namespace": {
+          "type": "string",
+          "title": "Tag Namespace",
+          "description": "Optional namespace for the tag to prevent collisions"
+        },
+        "removed": {
+          "type": "boolean",
+          "default": false,
+          "title": "Removed",
+          "description": "Whether this tag is being removed rather than added"
+        }
+      },
+      "required": ["event", "target", "value"]
+    }
+  ]
+}

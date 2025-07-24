@@ -16,6 +16,10 @@ This directory contains examples of PEEVEM events and streams to help you unders
 
 [`life-events.ndjson`](life-events.ndjson) shows how to record significant personal events, meetings, and activities.
 
+### Tag Operations
+
+[`tag-operations.ndjson`](tag-operations.ndjson) demonstrates how to use separate tag events for classification, including adding, namespacing, and removing tags.
+
 ## Using the Examples
 
 These examples are provided to help you understand the structure and possibilities of PEEVEM. You can:
@@ -23,6 +27,17 @@ These examples are provided to help you understand the structure and possibiliti
 1. Use them as templates for your own events
 2. Load them into PEEVEM-compatible tools for testing
 3. Study them to understand the event patterns
+
+### Understanding Tag Events
+
+In the examples, you'll notice that tags are implemented as separate events rather than embedded within the original events. This approach offers several advantages:
+
+- Original events remain unchanged when tags are added or removed
+- Tag history is preserved in the event stream
+- The same tagging approach works consistently across all event types
+- Multiple tagging taxonomies can be applied using namespaces
+
+See the [tagging documentation](../docs/tagging.md) for more details on this approach.
 
 ## Contributing Examples
 

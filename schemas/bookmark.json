@@ -29,14 +29,6 @@
           "title": "Description",
           "description": "Optional description or notes about the bookmark"
         },
-        "tags": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "title": "Tags",
-          "description": "Categorization tags for the bookmark"
-        },
         "archived": {
           "type": "boolean",
           "default": false,

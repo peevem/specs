@@ -31,6 +31,14 @@ Every PEEVEM event conforms to a JSON Schema. This ensures:
 - Self-documenting data
 - Interoperability between tools
 
+### Event Relationships and Tagging
+
+PEEVEM follows a principle of keeping events independent and immutable. Rather than embedding relationships and metadata like tags within events, these connections are represented as separate events themselves:
+
+- Tags are implemented as separate tag events that reference the target event
+- This allows adding/removing tags without modifying the original events
+- The same approach can be used for other forms of metadata and relationships
+
 ## Basic Event Structure
 
 All PEEVEM events share this common structure:
