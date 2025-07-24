@@ -103,8 +103,17 @@ function determineSchema(event) {
     return 'https://peevem.org/schemas/contact';
   }
 
-  if (event.event === 'tag') {
-    return 'https://peevem.org/schemas/tag';
+  // Handle metadata events
+  const metadataEvents = {
+    'tag': 'https://peevem.org/schemas/tag',
+    'status': 'https://peevem.org/schemas/status',
+    'note': 'https://peevem.org/schemas/note',
+    'rating': 'https://peevem.org/schemas/rating',
+    'priority': 'https://peevem.org/schemas/priority'
+  };
+
+  if (event.event in metadataEvents) {
+    return metadataEvents[event.event];
   }
 
   // If we have an event property, use the generic event schema

@@ -1,0 +1,16 @@
+{"date":"2025-07-25T08:00:00Z","uuid":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","event":"bookmark","url":"https://peevem.org/documentation","title":"PEEVEM Documentation"}
+{"date":"2025-07-25T08:01:00Z","uuid":"b2c3d4e5-f6a7-5b6c-9d0e-1f2a3b4c5d6e","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"documentation"}
+{"date":"2025-07-25T08:01:10Z","uuid":"c3d4e5f6-a7b8-6c7d-0e1f-2a3b4c5d6e7f","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"peevem"}
+{"date":"2025-07-25T08:02:00Z","uuid":"d4e5f6a7-b8c9-7d0e-1f2a-3b4c5d6e7f8a","event":"status","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","type":"read_later","value":true}
+{"date":"2025-07-25T08:03:00Z","uuid":"e5f6a7b8-c9d0-8e1f-2a3b-4c5d6e7f8a9b","event":"priority","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"medium"}
+{"date":"2025-07-25T08:04:00Z","uuid":"f6a7b8c9-d0e1-9f2a-3b4c-5d6e7f8a9b0c","event":"note","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","content":"Need to review this for the project"}
+{"date":"2025-07-25T14:30:00Z","uuid":"a7b8c9d0-e1f2-0a3b-4c5d-6e7f8a9b0c1d","event":"status","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","type":"read","value":true}
+{"date":"2025-07-25T14:31:00Z","uuid":"b8c9d0e1-f2a3-1b4c-5d6e-7f8a9b0c1d2e","event":"status","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","type":"read_later","value":false}
+{"date":"2025-07-25T14:45:00Z","uuid":"c9d0e1f2-a3b4-2c5d-6e7f-8a9b0c1d2e3f","event":"rating","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":5,"scale":"stars"}
+{"date":"2025-07-25T14:50:00Z","uuid":"d0e1f2a3-b4c5-3d6e-7f8a-9b0c1d2e3f4a","event":"note","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","content":"Excellent documentation that clearly explains the project architecture. Will use this as a reference for implementation.","replaces":"f6a7b8c9-d0e1-9f2a-3b4c-5d6e7f8a9b0c"}
+{"date":"2025-07-25T14:55:00Z","uuid":"e1f2a3b4-c5d6-4e7f-8a9b-0c1d2e3f4a5b","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"reference"}
+{"date":"2025-07-28T09:00:00Z","uuid":"f2a3b4c5-d6e7-5f8a-9b0c-1d2e3f4a5b6c","event":"status","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","type":"starred","value":true}
+{"date":"2025-08-15T10:00:00Z","uuid":"a3b4c5d6-e7f8-6a9b-0c1d-2e3f4a5b6c7d","event":"status","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","type":"archived","value":true,"reason":"No longer needed for active reference"}
+{"date":"2025-08-15T10:01:00Z","uuid":"b4c5d6e7-f8a9-7b0c-1d2e-3f4a5b6c7d8e","event":"priority","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"low"}
+{"date":"2025-08-20T14:00:00Z","uuid":"c5d6e7f8-a9b0-8c1d-2e3f-4a5b6c7d8e9f","event":"status","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","type":"archived","value":false}
+{"date":"2025-08-20T14:01:00Z","uuid":"d6e7f8a9-b0c1-9d2e-3f4a-5b6c7d8e9f0a","event":"tag","target":"a1b2c3d4-e5f6-4a5b-8c7d-9e0f1a2b3c4d","value":"implementation","namespace":"phase"}

@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/rating",
+  "title": "Rating Event",
+  "description": "An event representing a rating attached to another event",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "const": "rating",
+          "title": "Event Type",
+          "description": "Indicates this is a rating event"
+        },
+        "target": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Target Event",
+          "description": "UUID of the event being rated"
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 5,
+              "multipleOf": 0.5,
+              "title": "Numeric Rating",
+              "description": "Rating value on a 0-5 scale"
+            },
+            {
+              "type": "string",
+              "enum": ["like", "dislike", "love", "hate"],
+              "title": "Sentiment Rating",
+              "description": "Rating as a sentiment"
+            }
+          ],
+          "title": "Rating Value",
+          "description": "The rating value, either numeric or sentiment-based"
+        },
+        "scale": {
+          "type": "string",
+          "title": "Rating Scale",
+          "description": "Optional indication of the rating scale used (e.g., 'stars', 'percentage', 'thumbs')"
+        },
+        "aspect": {
+          "type": "string",
+          "title": "Rated Aspect",
+          "description": "Optional specific aspect being rated (e.g., 'performance', 'design', 'usefulness')"
+        },
+        "replaces": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Replaces Rating",
+          "description": "UUID of a previous rating event this one replaces"
+        }
+      },
+      "required": ["event", "target", "value"]
+    }
+  ]
+}

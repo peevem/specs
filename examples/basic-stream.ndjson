@@ -2,13 +2,17 @@
 {"date":"2025-07-24T09:15:00Z","uuid":"550e8400-e29b-41d4-a716-446655440001","event":"read_article","title":"Introduction to Event Sourcing","url":"https://example.com/event-sourcing-intro"}
 {"date":"2025-07-24T09:15:10Z","uuid":"550e8400-e29b-41d4-a716-446655440101","event":"tag","target":"550e8400-e29b-41d4-a716-446655440001","value":"programming"}
 {"date":"2025-07-24T09:15:11Z","uuid":"550e8400-e29b-41d4-a716-446655440102","event":"tag","target":"550e8400-e29b-41d4-a716-446655440001","value":"architecture"}
+{"date":"2025-07-24T09:15:20Z","uuid":"550e8400-e29b-41d4-a716-446655440201","event":"status","target":"550e8400-e29b-41d4-a716-446655440001","type":"read","value":true}
+{"date":"2025-07-24T09:15:30Z","uuid":"550e8400-e29b-41d4-a716-446655440301","event":"note","target":"550e8400-e29b-41d4-a716-446655440001","content":"Excellent introduction to event sourcing concepts. Should implement some of these ideas in our project."}
 {"date":"2025-07-24T12:30:00Z","uuid":"550e8400-e29b-41d4-a716-446655440002","event":"had_lunch","food":"sandwich","location":"café"}
-{"date":"2025-07-24T14:00:00Z","uuid":"550e8400-e29b-41d4-a716-446655440003","event":"meeting","subject":"PEEVEM Project Planning","participants":["Alice","Bob"],"notes":"Discussed schema design and project roadmap"}
+{"date":"2025-07-24T14:00:00Z","uuid":"550e8400-e29b-41d4-a716-446655440003","event":"meeting","subject":"PEEVEM Project Planning","participants":["Alice","Bob"]}
 {"date":"2025-07-24T14:00:15Z","uuid":"550e8400-e29b-41d4-a716-446655440103","event":"tag","target":"550e8400-e29b-41d4-a716-446655440003","value":"work"}
 {"date":"2025-07-24T14:00:16Z","uuid":"550e8400-e29b-41d4-a716-446655440104","event":"tag","target":"550e8400-e29b-41d4-a716-446655440003","value":"important"}
+{"date":"2025-07-24T14:00:20Z","uuid":"550e8400-e29b-41d4-a716-446655440302","event":"note","target":"550e8400-e29b-41d4-a716-446655440003","content":"Discussed schema design and project roadmap"}
+{"date":"2025-07-24T14:10:00Z","uuid":"550e8400-e29b-41d4-a716-446655440401","event":"priority","target":"550e8400-e29b-41d4-a716-446655440003","value":"high"}
 {"date":"2025-07-24T16:45:00Z","uuid":"550e8400-e29b-41d4-a716-446655440004","event":"moved_file","filename":"project-notes.md","from_path":"/Downloads/","to_path":"/Documents/Projects/PEEVEM/"}
-{"date":"2025-07-24T20:00:00Z","uuid":"550e8400-e29b-41d4-a716-446655440005","event":"watched_movie","title":"The Event Horizon","rating":4,"with":["Charlie"]}
+{"date":"2025-07-24T20:00:00Z","uuid":"550e8400-e29b-41d4-a716-446655440005","event":"watched_movie","title":"The Event Horizon","with":["Charlie"]}
+{"date":"2025-07-24T20:10:00Z","uuid":"550e8400-e29b-41d4-a716-446655440501","event":"rating","target":"550e8400-e29b-41d4-a716-446655440005","value":4,"scale":"stars"}
 {"date":"2025-07-24T20:30:00Z","uuid":"550e8400-e29b-41d4-a716-446655440105","event":"tag","target":"550e8400-e29b-41d4-a716-446655440005","value":"entertainment"}
-{"date":"2025-07-25T10:15:00Z","uuid":"550e8400-e29b-41d4-a716-446655440106","event":"tag","target":"550e8400-e29b-41d4-a716-446655440003","value":"completed","namespace":"status"}
-{"date":"2025-07-24T20:30:00Z","uuid":"550e8400-e29b-41d4-a716-446655440105","event":"tag","target":"550e8400-e29b-41d4-a716-446655440005","value":"entertainment"}
-{"date":"2025-07-25T10:15:00Z","uuid":"550e8400-e29b-41d4-a716-446655440106","event":"tag","target":"550e8400-e29b-41d4-a716-446655440003","value":"completed","namespace":"status"}
+{"date":"2025-07-25T10:15:00Z","uuid":"550e8400-e29b-41d4-a716-446655440202","event":"status","target":"550e8400-e29b-41d4-a716-446655440003","type":"completed","value":true}
+{"date":"2025-07-25T16:20:00Z","uuid":"550e8400-e29b-41d4-a716-446655440203","event":"status","target":"550e8400-e29b-41d4-a716-446655440001","type":"archived","value":true,"reason":"Information is now outdated"}

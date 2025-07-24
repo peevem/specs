@@ -70,4 +70,8 @@ This modular approach allows different aspects of the ecosystem to evolve indepe
 
 I'll update the documentation and examples to reflect the concept that tags should be separate events rather than embedded within the original events. This approach allows for more flexible tag management without modifying the original events.
 
-Let me implement these changes
+Let me implement these changes.
+
+> Deleted and archived status, as well as notes, to-be-read status and other common information also should be separate events.
+
+I'll implement your suggestion to make additional common metadata (like archived status, to-be-read status, notes, etc.) into separate events rather than embedded properties. This follows the same approach as tags, making the system more flexible and consistent.I'll implement the changes to make additional properties like deleted status, archived status, notes, to-be-read status, etc. as separate events rather than embedding them in the original events. This approach follows the same philosophy as the tag events - keeping original events clean and immutable while allowing flexible metadata management.

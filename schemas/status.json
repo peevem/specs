@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/status",
+  "title": "Status Event",
+  "description": "An event representing a status change for another event",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "const": "status",
+          "title": "Event Type",
+          "description": "Indicates this is a status event"
+        },
+        "target": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Target Event",
+          "description": "UUID of the event whose status is being changed"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["archived", "deleted", "completed", "read", "unread", "starred", "hidden", "flagged", "active", "inactive", "in_progress", "pending", "postponed"],
+          "title": "Status Type",
+          "description": "The type of status being applied"
+        },
+        "value": {
+          "type": "boolean",
+          "default": true,
+          "title": "Status Value",
+          "description": "Whether to apply (true) or remove (false) this status"
+        },
+        "reason": {
+          "type": "string",
+          "title": "Reason",
+          "description": "Optional explanation for the status change"
+        }
+      },
+      "required": ["event", "target", "type"]
+    }
+  ]
+}

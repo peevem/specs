@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/note",
+  "title": "Note Event",
+  "description": "An event representing a note attached to another event",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "const": "note",
+          "title": "Event Type",
+          "description": "Indicates this is a note event"
+        },
+        "target": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Target Event",
+          "description": "UUID of the event this note is attached to"
+        },
+        "content": {
+          "type": "string",
+          "title": "Note Content",
+          "description": "The text content of the note"
+        },
+        "type": {
+          "type": "string",
+          "title": "Note Type",
+          "description": "Optional categorization of the note (e.g., 'comment', 'review', 'summary')"
+        },
+        "replaces": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Replaces Note",
+          "description": "UUID of a previous note event this one replaces"
+        }
+      },
+      "required": ["event", "target", "content"]
+    }
+  ]
+}

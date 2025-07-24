@@ -24,28 +24,11 @@
           "title": "Title",
           "description": "The title of the bookmarked page"
         },
-        "description": {
-          "type": "string",
-          "title": "Description",
-          "description": "Optional description or notes about the bookmark"
-        },
-        "archived": {
-          "type": "boolean",
-          "default": false,
-          "title": "Archived",
-          "description": "Whether the bookmark has been archived"
-        },
         "favicon": {
           "type": "string",
           "format": "uri",
           "title": "Favicon",
           "description": "URI to the favicon of the bookmarked site"
-        },
-        "read_later": {
-          "type": "boolean",
-          "default": false,
-          "title": "Read Later",
-          "description": "Whether this bookmark was saved to read later"
         },
         "read_time_minutes": {
           "type": "integer",

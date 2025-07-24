@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/priority",
+  "title": "Priority Event",
+  "description": "An event representing a priority assignment for another event",
+  "type": "object",
+  "allOf": [
+    { "$ref": "https://peevem.org/schemas/core" },
+    {
+      "properties": {
+        "event": {
+          "const": "priority",
+          "title": "Event Type",
+          "description": "Indicates this is a priority event"
+        },
+        "target": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Target Event",
+          "description": "UUID of the event being prioritized"
+        },
+        "value": {
+          "oneOf": [
+            {
+              "type": "string",
+              "enum": ["lowest", "low", "medium", "high", "highest", "critical"],
+              "title": "Named Priority",
+              "description": "Priority as a named level"
+            },
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10,
+              "title": "Numeric Priority",
+              "description": "Priority as a number (typically 1-10)"
+            }
+          ],
+          "title": "Priority Value",
+          "description": "The priority value assigned"
+        },
+        "system": {
+          "type": "string",
+          "title": "Priority System",
+          "description": "Optional indication of the priority system used (e.g., 'eisenhower', 'numbered', 'MoSCoW')"
+        },
+        "context": {
+          "type": "string",
+          "title": "Priority Context",
+          "description": "Optional context for this priority (e.g., 'work', 'personal', 'project-x')"
+        },
+        "replaces": {
+          "type": "string",
+          "format": "uuid",
+          "title": "Replaces Priority",
+          "description": "UUID of a previous priority event this one replaces"
+        }
+      },
+      "required": ["event", "target", "value"]
+    }
+  ]
+}

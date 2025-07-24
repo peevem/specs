@@ -20,6 +20,10 @@ This directory contains examples of PEEVEM events and streams to help you unders
 
 [`tag-operations.ndjson`](tag-operations.ndjson) demonstrates how to use separate tag events for classification, including adding, namespacing, and removing tags.
 
+### Metadata Operations
+
+[`metadata-operations.ndjson`](metadata-operations.ndjson) provides a comprehensive example of working with all types of metadata events, including tags, status changes, notes, ratings, and priorities.
+
 ## Using the Examples
 
 These examples are provided to help you understand the structure and possibilities of PEEVEM. You can:
@@ -28,16 +32,24 @@ These examples are provided to help you understand the structure and possibiliti
 2. Load them into PEEVEM-compatible tools for testing
 3. Study them to understand the event patterns
 
-### Understanding Tag Events
+### Understanding Metadata Events
 
-In the examples, you'll notice that tags are implemented as separate events rather than embedded within the original events. This approach offers several advantages:
+In the examples, you'll notice that metadata like tags, status, notes, ratings, and priorities are implemented as separate events rather than embedded within the original events. This approach offers several advantages:
 
-- Original events remain unchanged when tags are added or removed
-- Tag history is preserved in the event stream
-- The same tagging approach works consistently across all event types
-- Multiple tagging taxonomies can be applied using namespaces
+- **Immutability**: Original events remain unchanged when metadata is added, modified, or removed
+- **History**: All metadata changes are preserved in the event stream with timestamps
+- **Consistency**: The same approach works uniformly across all event types
+- **Flexibility**: Multiple metadata taxonomies can be applied in parallel
 
-See the [tagging documentation](../docs/tagging.md) for more details on this approach.
+Types of metadata events include:
+
+- **Tag events**: For categorization and labeling
+- **Status events**: For tracking states like archived, deleted, read, completed
+- **Note events**: For attaching textual notes and comments
+- **Rating events**: For numeric or sentiment-based ratings
+- **Priority events**: For assigning importance levels
+
+See the [metadata events documentation](../docs/metadata-events.md) for more details on this approach.
 
 ## Contributing Examples
 
