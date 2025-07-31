@@ -1,8 +1,0 @@
-{
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://peevem.org/schemas/core/contentful-event/properties/content",
-  "title": "Event content",
-  "description": "Base64 encoded content of the event",
-  "type": "string",
-  "contentEncoding": "base64"
-}
