@@ -6,25 +6,16 @@
   "type": "object",
   "properties": {
     "date": {
-      "$ref": "https://peevem.org/schemas/primitives/date",
-      "title": "Event date",
-      "description": "Used for sorting"
+      "$ref": "https://peevem.org/schemas/properties/date"
     },
     "uuid": {
-      "$ref": "https://peevem.org/schemas/primitives/uuid",
-      "title": "Event unique id",
-      "description": "Used for references ; should be unique in a given stream"
+      "$ref": "https://peevem.org/schemas/properties/uuid"
     },
     "event": {
-      "title": "Event verb",
-      "description": "What occured?",
-      "type": "string",
-      "minLength": 1
+      "$ref": "https://peevem.org/schemas/properties/event"
     },
     "subject": {
-      "$ref": "https://peevem.org/schemas/primitives/uuid",
-      "title": "Event subject",
-      "description": "What's concerned?"
+      "$ref": "https://peevem.org/schemas/properties/subject"
     }
   },
   "required": [ "date", "uuid", "event" ]
