@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://peevem.org/schemas/core/event/properties/subjects",
-  "title": "Event subject",
-  "description": "What's concerned?",
+  "title": "Event subjects",
+  "description": "Which previous events are concerned by this event?",
   "type": "array",
   "items": {
     "$ref": "https://peevem.org/schemas/primitives/uuid"

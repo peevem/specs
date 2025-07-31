@@ -1,8 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://peevem.org/schemas/core/event",
-  "title": "",
-  "description": "",
   "type": "object",
   "properties": {
     "date": {

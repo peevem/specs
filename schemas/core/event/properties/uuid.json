@@ -2,6 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://peevem.org/schemas/core/event/properties/uuid",
   "title": "Event unique id",
-  "description": "Used for references ; should be unique in a given stream",
+  "description": "Used for references ; should be unique in a given event stream.",
   "$ref": "https://peevem.org/schemas/primitives/uuid"
 }
