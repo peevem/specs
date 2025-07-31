@@ -2,6 +2,6 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://peevem.org/schemas/core/event/properties/date",
   "title": "Event date",
-  "description": "Used for sorting",
+  "description": "At which date and time the event occurred; used for sorting.",
   "$ref": "https://peevem.org/schemas/primitives/date"
 }
