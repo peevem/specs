@@ -4,24 +4,31 @@
   "title": "",
   "description": "",
   "type": "object",
-  "allOf": [
-    { "$ref": "/schemas/core" },
-    {
-      "properties": {
-        "event": {
-          "title": "Event verb",
-          "description": "What occured?",
-          "type": "string",
-          "minLength": 1
-        },
-        "subject": {
-          "title": "Event subject",
-          "description": "What's concerned?",
-          "type": "string",
-          "format": "uuid"
-        }
-      },
-      "required": ["event"]
+  "properties": {
+    "date": {
+      "title": "Event date",
+      "description": "Used for sorting",
+      "type": "string",
+      "format": "date-time"
+    },
+    "uuid": {
+      "title": "Event unique id",
+      "description": "Used for references ; should be unique in a given stream",
+      "type": "string",
+      "format": "uuid"
+    },
+    "event": {
+      "title": "Event verb",
+      "description": "What occured?",
+      "type": "string",
+      "minLength": 1
+    },
+    "subject": {
+      "title": "Event subject",
+      "description": "What's concerned?",
+      "type": "string",
+      "format": "uuid"
     }
-  ]
+  },
+  "required": ["date", "uuid", "event"]
 }
