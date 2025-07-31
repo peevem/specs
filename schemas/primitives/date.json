@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/primitives/date",
+  "title": "Date",
+  "description": "A date-time string format as defined by RFC 3339, section 5.6",
+  "type": "string",
+  "format": "date-time"
+}

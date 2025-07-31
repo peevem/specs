@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/primitives/uuid",
+  "title": "UUID",
+  "description": "A Universally Unique Identifier (UUID) as defined by RFC 4122",
+  "type": "string",
+  "format": "uuid"
+}

@@ -1,19 +1,15 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://peevem.org/schemas/content",
+  "$id": "https://peevem.org/schemas/contentful-event",
   "title": "",
   "description": "",
   "type": "object",
-  "allOf": [
-    { "$ref": "https://peevem.org/schemas/event" },
-    {
-      "properties": {
-        "content": {
-          "type": "string",
-          "contentEncoding": "base64"
-        }
-      },
-      "required": ["content"]
+  "$ref": "https://peevem.org/schemas/event",
+  "properties": {
+    "content": {
+      "type": "string",
+      "contentEncoding": "base64"
     }
-  ]
+  },
+  "required": [ "content" ]
 }
