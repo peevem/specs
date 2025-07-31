@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://peevem.org/schemas/core/event",
+  "title": "",
+  "description": "",
+  "type": "object",
+  "properties": {
+    "date": {
+      "$ref": "https://peevem.org/schemas/core/event/properties/date"
+    },
+    "uuid": {
+      "$ref": "https://peevem.org/schemas/core/event/properties/uuid"
+    },
+    "event": {
+      "$ref": "https://peevem.org/schemas/core/event/properties/event"
+    },
+    "subjects": {
+      "$ref": "https://peevem.org/schemas/core/event/properties/subject"
+    }
+  },
+  "required": [ "date", "uuid", "event" ]
+}

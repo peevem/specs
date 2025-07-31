@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://peevem.org/schemas/properties/event/event",
+  "$id": "https://peevem.org/schemas/core/event/properties/event",
   "title": "Event verb",
   "description": "What occured?",
   "type": "string",

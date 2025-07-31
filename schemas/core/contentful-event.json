@@ -1,10 +1,10 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://peevem.org/schemas/contentful-event",
+  "$id": "https://peevem.org/schemas/core/contentful-event",
   "title": "",
   "description": "",
   "type": "object",
-  "$ref": "https://peevem.org/schemas/event",
+  "$ref": "https://peevem.org/schemas/core/event",
   "properties": {
     "content": {
       "type": "string",
