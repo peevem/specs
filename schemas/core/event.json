@@ -14,8 +14,8 @@
     "event": {
       "$ref": "https://peevem.org/schemas/properties/event/event"
     },
-    "subject": {
-      "$ref": "https://peevem.org/schemas/properties/event/subject"
+    "subjects": {
+      "$ref": "https://peevem.org/schemas/properties/event/subjects"
     }
   },
   "required": [ "date", "uuid", "event" ]
