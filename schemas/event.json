@@ -6,16 +6,16 @@
   "type": "object",
   "properties": {
     "date": {
-      "$ref": "https://peevem.org/schemas/properties/date"
+      "$ref": "https://peevem.org/schemas/properties/event/date"
     },
     "uuid": {
-      "$ref": "https://peevem.org/schemas/properties/uuid"
+      "$ref": "https://peevem.org/schemas/properties/event/uuid"
     },
     "event": {
-      "$ref": "https://peevem.org/schemas/properties/event"
+      "$ref": "https://peevem.org/schemas/properties/event/event"
     },
     "subject": {
-      "$ref": "https://peevem.org/schemas/properties/subject"
+      "$ref": "https://peevem.org/schemas/properties/event/subject"
     }
   },
   "required": [ "date", "uuid", "event" ]

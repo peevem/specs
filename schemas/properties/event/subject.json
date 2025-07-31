@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://peevem.org/schemas/properties/subject",
+  "$id": "https://peevem.org/schemas/properties/event/subject",
   "title": "Event subject",
   "description": "What's concerned?",
   "$ref": "https://peevem.org/schemas/primitives/uuid"
