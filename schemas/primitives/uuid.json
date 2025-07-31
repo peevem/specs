@@ -4,5 +4,9 @@
   "title": "UUID",
   "description": "A Universally Unique Identifier (UUID) as defined by RFC 4122",
   "type": "string",
-  "format": "uuid"
+  "format": "uuid",
+  "x-i18n": {
+    "en": { "title": "UUID", "description": "A Universally Unique Identifier (UUID) as defined by RFC 4122" },
+    "fr": { "title": "UUID",  "description": "Un identifiant unique universel (UUID) comme défini par la RFC 4122" }
+  }
 }

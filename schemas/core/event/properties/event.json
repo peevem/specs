@@ -4,5 +4,9 @@
   "title": "Event verb",
   "description": "What happened?",
   "type": "string",
-  "minLength": 1
+  "minLength": 1,
+  "x-i18n": {
+    "en": { "title": "Event verb", "description": "What happened?" },
+    "fr": { "title": "Nom d'évènement", "description": "Qu'est-ce qui s'est passé ?" }
+  }
 }

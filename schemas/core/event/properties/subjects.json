@@ -7,5 +7,9 @@
   "items": {
     "$ref": "https://peevem.org/schemas/primitives/uuid"
   },
-  "minItems": 1
+  "minItems": 1,
+  "x-i18n": {
+    "en": { "title": "Event subjects", "description": "Which previous events are concerned by this event?" },
+    "fr": { "title": "Cibles de l'événement", "description": "Quels événements sont concernés par cet événement ?" }
+  }
 }

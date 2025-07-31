@@ -1,7 +1,14 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://peevem.org/schemas/core/event/properties/date",
+  "$ref": "https://peevem.org/schemas/primitives/date",
   "title": "Event date",
   "description": "At which date and time the event occurred; used for sorting.",
-  "$ref": "https://peevem.org/schemas/primitives/date"
+  "x-i18n": {
+    "en": { "title": "Event date", "description": "At which date and time the event occurred; used for sorting." },
+    "fr": {
+      "title": "Date de l'événement",
+      "description": "À quelle moment l'événement s'est produit ; utilisé pour le tri."
+    }
+  }
 }
