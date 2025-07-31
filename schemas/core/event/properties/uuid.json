@@ -3,5 +3,15 @@
   "$id": "https://peevem.org/schemas/core/event/properties/uuid",
   "title": "Event unique id",
   "description": "Used for references ; should be unique in a given event stream.",
-  "$ref": "https://peevem.org/schemas/primitives/uuid"
+  "$ref": "https://peevem.org/schemas/primitives/uuid",
+  "x-i18n": {
+    "en": {
+      "title": "Event unique id",
+      "description": "Used for references ; should be unique in a given event stream."
+    },
+    "fr": {
+      "title": "Identifiant unique de l'évènement",
+      "description": "Sert pour le référencement : il doit être unique dans un flux d'évènements."
+    }
+  }
 }

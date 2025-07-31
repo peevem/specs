@@ -4,5 +4,12 @@
   "title": "Date & time",
   "description": "A date-time string format as defined by RFC 3339, section 5.6",
   "type": "string",
-  "format": "date-time"
+  "format": "date-time",
+  "x-i18n": {
+    "en": { "title": "Date & time", "description": "A date-time string format as defined by RFC 3339, section 5.6" },
+    "fr": {
+      "title": "Date et heure",
+      "description": "Une chaîne de caractères au format date-heure comme défini par la RFC 3339, section 5.6"
+    }
+  }
 }
