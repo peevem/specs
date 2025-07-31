@@ -18,5 +18,6 @@
       "$ref": "https://peevem.org/schemas/core/event/properties/subjects"
     }
   },
-  "required": [ "date", "uuid", "event" ]
+  "required": [ "date", "uuid", "event" ],
+  "additionalProperties": true
 }
