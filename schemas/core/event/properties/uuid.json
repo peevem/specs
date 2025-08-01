@@ -12,6 +12,7 @@
     "fr": {
       "title": "Identifiant unique de l'évènement",
       "description": "Sert pour le référencement : il doit être unique dans un flux d'évènements."
-    }
+    },
+    "x-peevem-property": "event/uuid"
   }
 }

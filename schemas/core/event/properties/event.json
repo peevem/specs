@@ -8,5 +8,6 @@
   "x-i18n": {
     "en": { "title": "Event verb", "description": "What happened?" },
     "fr": { "title": "Nom d'évènement", "description": "Qu'est-ce qui s'est passé ?" }
-  }
+  },
+  "x-peevem-property": "event/event"
 }

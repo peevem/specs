@@ -10,5 +10,6 @@
       "title": "Date de l'événement",
       "description": "À quelle moment l'événement s'est produit ; utilisé pour le tri."
     }
-  }
+  },
+  "x-peevem-property": "event/date"
 }
